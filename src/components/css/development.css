@@ -1,0 +1,147 @@
+.development {
+    grid-area: development;
+}
+
+.section-development__mobile-view {
+    background-color: var(--white-color);
+    border-radius: 0.75rem;
+    padding: 16px;
+    min-width: 20.5rem;
+    max-width: 28.875rem;
+}
+
+.development-frame {
+    display: flex;
+    height: 38.3125rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-image {
+    border-radius: 0.75rem;
+    border: 1px solid var(--gray3-color);
+    object-fit: cover;
+    flex: 1 0 0;
+    max-height: 298.5px;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-tags-title {
+    display: flex;
+    padding: 8px 0rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-tags {
+    width: 13.8125rem;
+    height: 1.1875rem;
+    color: var(--gray2-color);
+    font-weight: 600;
+}
+
+.project-title {
+    color: var(--black-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.project-description {
+    color: var(--gray, #828282);
+    font-size: 1.125rem;
+}
+
+.project-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.button-demo {
+    width: 8.4375rem;
+    height: 2.8125rem;
+    border-radius: 0.75rem;
+    border: none;
+    background-color: var(--blue-color);
+
+    color: var(--white-color);
+    font-size: 1.125rem;
+}
+
+.button-code {
+    width: 8.4375rem;
+    height: 2.8125rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--blue-color);
+    background-color: var(--white-color);
+
+    color: var(--blue-color);
+    font-size: 1.125rem;
+}
+
+.development-hide {
+    display: none;
+}
+
+@media only screen and (min-width: 1100px) {
+
+    .section-development__mobile-view {
+        padding: unset;
+        width: unset;
+        min-width: unset;
+        max-width: unset;
+    }
+
+    .development-hide {
+        display: unset;
+    }
+
+    #section-development {
+        display: flex;
+        height: 38.3125rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        align-self: stretch;
+        min-width: 90.5rem;
+        grid-area: section-development;
+    }
+
+    .development-portrait-2 {
+        display: flex;
+        height: 40.3125rem;
+        padding: 16px;
+
+        grid-area: development-portrait-2;
+    }
+
+    .project-image {
+        height: 100%;
+        width: 100%;
+        max-height: unset;
+    }
+
+    .development-portrait {
+        display: flex;
+        background-color: var(--white-color);
+        border-radius: 0.75rem;
+        padding: 16px;
+        flex-direction: column;
+        flex: 0 1 31.217vw;
+        align-self: stretch;
+        align-items: center;
+    }
+
+    .development-frame-portrait {
+        display: flex;
+        width: 22.375rem;
+        height: 38.313rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}

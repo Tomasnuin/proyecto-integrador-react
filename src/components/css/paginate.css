@@ -1,0 +1,79 @@
+.paginate-hide {
+    display: none;
+}
+
+@media only screen and (min-width: 1100px) {
+
+    #paginate {
+        display: flex;
+        padding: 12px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+    }
+
+    .btn {
+        display: flex;
+        width: 2.125rem;
+        height: 2.125rem;
+        padding: 8px;
+        justify-content: center;
+        align-items: center;
+
+        background-color: var(--bg-color);
+        border-radius: 0.25rem;
+        border: 1px solid var(--gray2-color);
+
+        font-family: inherit;
+        font-weight: 500;
+    }
+
+    .btn-ellipsis {
+        display: flex;
+        width: 2.125rem;
+        height: 2.125rem;
+        padding: 4px 2px;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0.25rem;
+        border: none;
+    }
+
+    .dot {
+        width: 0.5rem;
+        height: 0.5rem;
+        flex-shrink: 0;
+
+        fill: var(--gray2-color);
+    }
+
+    .btn-selected {
+        display: flex;
+        width: 2.125rem;
+        height: 2.125rem;
+        padding: 8px;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 0.25rem;
+        border: 1px solid var(--blue-color);
+        background: var(--blue-color);
+
+        color: #FFF;
+        text-align: center;
+    }
+
+    .btn-adjacent {
+        border: 1px solid var(--blue-color);
+        color: var(--blue-color);
+
+    }
+
+    .btn-hide {
+        display: none;
+    }
+
+    .btn:hover {
+        cursor: pointer;
+    }
+}

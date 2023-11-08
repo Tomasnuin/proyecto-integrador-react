@@ -1,0 +1,42 @@
+/* Select Proyects (mobile vesrion) */
+#proyects-select-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    grid-area: select-proyect;
+}
+
+#proyects-select-title {
+    color: var(--gray-2, #4F4F4F);
+
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.button-text-responsivo {
+    width: 8.5625rem;
+}
+
+.button-text-js {
+    width: 7.875rem;
+}
+
+.button-text-react {
+    width: 8.4375rem;
+    height: 2.8125rem;
+}
+
+/* End of Select Proyects (mobile vesrion) */
+
+@media only screen and (min-width: 1100px) {
+
+    #proyects-select-1 {
+        padding: 0 16px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .button-text-react {
+        align-self: flex-end;
+    }
+}
